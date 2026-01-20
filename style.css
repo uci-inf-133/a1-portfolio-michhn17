@@ -1,0 +1,327 @@
+/* style.css */
+
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Base paragraph styling */
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #2A3A5E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Site title */
+header h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+/* Applying base heading style & serif as alternative */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+/* NAVIGATION MENU */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* For smaller screens */
+}
+
+/* Navigation link styling */
+nav a {
+    color: white;
+    border-bottom: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #121828;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* SECTIONS - general styling*/
+section {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+/* INTRODUCTION SECTION */
+.introduction {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ /* Profile image */
+.introduction img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 50%; /* Circular */
+    object-fit: cover; /* Ensures image fills circle */
+    border: 2px solid #2A3A5E;
+    flex-shrink: 1;
+}
+
+/* Text content container of intro */
+.introduction .text-content {
+    flex: 1; /* Takes up remaining space */
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-text {
+    text-align: justify-left;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Gallery grid - 3 columns for inspiration images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Individual gallery image container */
+.gallery-item {
+    position: relative; /* Absolute positioning for overlay & caption */
+    overflow: hidden; /* Rounded corners */
+    border-radius: 12px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Interaction indicator */
+    width: 100%;
+}
+
+/* Gallery images */
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Preserve original aspect ratio */
+    display: block;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Caption for images*/
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Centered & scaled down */
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0; /*Hidden by default*/
+    transition: all 0.3s ease;
+    z-index: 2; /*Above overlay*/
+    text-align: center;
+    width: 80%;
+}
+
+/* Dark overlay effect - appears on hover*/
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Shades image */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+    z-index: 1; /* On top of image, below caption */
+    pointer-events: none;
+}
+
+/* Overlay on hover */
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+/* Image scales up for emphasis */
+.gallery-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Caption appears */
+.gallery-item:hover .caption {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* PROJECTS SECTION */
+.project-card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.project-image {
+    background-color: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+}
+
+/*Project information container*/
+.project-info {
+    padding: 20px;
+}
+
+
+/* BUTTONS */
+
+/* View project details button */
+.view-button {
+    display: inline-block;
+    background-color: #2A3A5E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* View button hover effect - dark blue */
+.view-button:hover {
+    background-color: #121828;
+}
+
+/* FOOTER */
+
+/* Container with dark background matching header */
+footer {
+    background-color: #2A3A5E;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+/* Footer content - flexbox layout for left & right alignment */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Wraps on small screens */
+    gap: 20px; /* Spacing between left & right sections */
+}
+
+/* Left side - copyright with name & year */
+.footer-left p {
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Right side - email & LinkedIn link container */
+.footer-right {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Vertically centers email text with LinkedIn icon */
+}
+
+/* Footer links (email & LinkedIn) */
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-flex; /* Alignment for icons & text */
+    align-items: center;
+}
+
+/* Footer link hover effect - darker background */
+.footer-right a:hover {
+    background-color: #121828;
+}
+
+/* LinkedIn icon styling */
+.linkedin-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    filter: brightness(1); /* Make icon is visible */
+}
+
+/* MOBILE RESPONSIVENESS */
+
+/* For screens 600px & smaller */
+@media (max-width: 600px) {
+    main {
+        padding: 10px; /* Reduce padding */
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    nav {
+        flex-direction: column; /* Stack navigation */
+        gap: 10px;
+    }
+    
+    /* Full-wdth navigation links for mobile*/
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Smaller captions */
+    .caption {
+        font-size: 1rem;
+    }
+
+    /* Stack vertically for mobile */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}

@@ -7,19 +7,184 @@ EMAIL: michhn17@uci.edu
 -->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Michelle Nguyen">
-  <meta name="description" content="description of your page">
-  <link rel="stylesheet" href="style.css">
-   <!-- you would also link to Bootstrap here! -->
-  <title>Michelle's Portfolio</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Michelle Nguyen">
+    <meta name="description" content="Detailed view of Michelle Nguyen's UX/UI portfolio">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle's Portfolio</title>
+
+    <!--External Stylesheets-->
+    <link rel="stylesheet" href="style.css">   
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+    <!-- Header-->
+    <header>
+        <h1>Michelle Nguyen</h1>
+        <nav> <!--Navigation Header-->
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <!--Main Content Container-->
+    <main>
+        <!--Introduction Section-->
+        <section class="introduction">
+            <div class="text-content">
+                <h2>Hello!</h2>
+                <p>I'm Michelle Nguyen,<br>
+                   a UX/UI designer <br>
+                   passionate about web<br>
+                   accessibility.
+                </p>
+            </div>
+            <!--Portrait image-->
+            <img src="images/portrait.jpg" alt="Michelle Nguyen">
+        </section>
+
+        <!--About Section with Bibliograph & Inspiration-->
+        <section class="about" id="about">
+            <div class="about-text">
+              <h2>About Me</h2>
+              <p>I am a 3rd year Informatics student at UCI. My purpose and goals are centered around accessibility in UX through design, research, and iteration. I hope to make web navigation as simple, interactive, and fun for as many people as possible.</p>
+            </div>
+
+            <h3>My inspirations:</h3>
+                <!--Gallery using Bootstrap Grid-->
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/georgeschackraspring2025.jpg" alt="Blue dress">
+                        <p class="caption">Fashion</p>
+                    </div>
+    
+                    <div class="gallery-item">
+                        <img src="images/forrestgumpposter.jpg" alt="Forrest Gump Movie">
+                        <p class="caption">Movies</p>
+                    </div>
+    
+                    <div class="gallery-item">
+                        <img src="images/ponyo.jpg" alt="Ponyo Movie">
+                        <p class="caption">Studio Ghibli</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/books.jpg" alt="Books">
+                        <p class="caption">Reading</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/familydoodle.jpg" alt="Family Doodle">
+                        <p class="caption">My Family</p>
+                    </div>
+    
+                    <div class="gallery-item">
+                        <img src="images/vietnamesedress.jpg" alt="Vietnamese Traditional Dress">
+                        <p class="caption">Culture</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/wicslogo.jpg" alt="WICS Logo">
+                        <p class="caption">Women in Information Computer Science</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/circleofshoes.jpg" alt="Circle of shoes">
+                        <p class="caption">Friends</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/bluemoonart.jpg" alt="Blue Moon Art">
+                        <p class="caption">Art</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            
+            <!-- Project Card 1 - Ambiance -->
+            <div class="project-card">
+                <!--Placeholder for project image-->
+                <div class="project-image">
+                        Project Image Here
+                </div>
+                <!--Project placeholder-->
+                <div class="project-info">
+                    <h3>Ambiance (TBD)</h3>
+                    <p>Interactive Lights Application</p>
+                    <!--Leads to external page for project details (TBD)-->
+                    <a href="#" class="view-button">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 - TaskFlow -->
+            <div class="project-card">
+                <!--Placeholder for project image-->
+                <div class="project-image">
+                        Project Image Here
+                </div>
+                <!--Project placeholder-->
+                <div class="project-info">
+                    <h3>TaskFlow (TBD)</h3>
+                    <p>Productivity Management Dashboard</p>
+                    <!--Leads to external page for project details (TBD)-->
+                    <a href="#" class="view-button">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 - ColorBlind Assist -->
+            <div class="project-card">
+                <!--Placeholder for project image-->
+                <div class="project-image">
+                        Project Image Here
+                </div>
+                <!--Project placeholder-->
+                <div class="project-info">
+                    <h3>ColorBlind Assist (TBD)</h3>
+                    <p>Accessible Color Palette Generator</p>
+                    <!--Leads to external page for project details (TBD)-->
+                    <a href="#" class="view-button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+
+                <p>&copy; 2026 Michelle Nguyen</p>
+            </div>
+            <div class="footer-right">
+                <!--Email contact link-->
+                <a href="mailto:chellenguyen777@gmail.com">chellenguyen777@gmail.com</a>
+                <!--LinkedIn profile link with icon-->
+                <a href="https://www.linkedin.com/in/michelle-nguyen-0a808732a">
+                    <img src="images/linkedinlogo.jpg" alt="LinkedIn Profile" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <p>
+        <!--W2C Validator link-->
+        <a href="http://validator.w3.org/check?uri=referer">
+           W3C validator
+        </a>
+    </p>
+    <!--External JavaScript file-->
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
