@@ -1,7 +1,5 @@
 // script.js
 
-import * as bootstrap from 'bootstrap';
-
 // Runs when page loads
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Portfolio loaded!");
@@ -28,13 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Interactive button for project
-    const projectButton = document.querySelector('.view-button');
-    if (projectButton) {
-        projectButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert("This is where you'd see more details about this project!");
-        });
-    }
 })
