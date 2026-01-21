@@ -28,9 +28,9 @@ I leveraed Bootstrap CSS helpers (grid system) to display content in a more inte
 
 (c) Advanced features
 
-**I added a hover effect on grid items.
+**I added a hover effect on grid items.**
 I linked an external page (LinkedIn link at footer).
-I used nested selectors on grid items to create effects styling.**
+**I used nested selectors on grid items to create effects styling.**
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
