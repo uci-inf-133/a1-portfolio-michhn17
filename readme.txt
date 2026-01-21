@@ -15,10 +15,9 @@
 
 (a) Basic features
 
-<<<<<<< HEAD
-Iadded images, all with alt attributes.
-Iaddded appropriate headings and paragraph texts.
-Ihave used semantic HTML tages, along with a footer.
+I added images, all with alt attributes.
+I addded appropriate headings and paragraph texts.
+I have used semantic HTML tages, along with a footer.
 
 (b) CSS features
 
@@ -36,28 +35,6 @@ I used nested selectors on grid items to create effects styling.
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
 I did not ignore any warnings or errors for the validators.I have checked using the inspect command because I did not have a URL address to use the WAVE checker and CSS Accessibility Validator. Additionally, I have only received a value error for the CSS checker, which I have corrected.
-=======
-**Iadded images, all with alt attributes.**
-**Iaddded appropriate headings and paragraph texts.**
-**Ihave used semantic HTML tages, along with a footer.**
-
-(b) CSS features
-
-**I modified padding and margins to indent content for readability.**
-**I modified the LinkedIn link, text color, or other colors to be visually appealing.**
-**I used custom font(s) from Google fonts to add more personality (make sure to include appropriate fallbacks).**
-**I leveraed Bootstrap CSS helpers (grid system) to display content in a more interesting manner.**
-
-(c) Advanced features
-
-**I added a hover effect on grid items.**
-**I linked an external page (LinkedIn link at footer).**
-**I used nested selectors on grid items to create effects styling.**
-
-3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
-
-**I did not ignore any warnings or errors for the validators.I have checked using the inspect command because I did not have a URL address to use the WAVE checker and CSS Accessibility Validator. Additionally, I have only received a value error for the CSS checker, which I have corrected.**
->>>>>>> 22b4c92d27776a7ea40e081e6b5644db74f223f2
 
 4.How long, in hours, did it take you to complete this assignment?
 
